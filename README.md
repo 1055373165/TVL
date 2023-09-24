@@ -1,3 +1,88 @@
+# 目录结构
+.
+├── AAVE
+│   ├── AAVE 解析 aToken 的精度（适用于 V2 V3）.pdf
+│   ├── AAVE2
+│   │   ├── AAVE V2 TVL 计算.pdf
+│   │   ├── AAVE2_TVL.js
+│   │   ├── AAVE2_TVL_Concurrency.js
+│   │   ├── getDecimal.js
+│   │   └── getOneEthPrice.js
+│   └── AAVE3
+│       ├── AAVE3_TVL.js
+│       └── AAVE3_TVL_Concurrency.js
+├── ABI
+│   ├── AAVE.json
+│   ├── MKR.json
+│   ├── aave2.json
+│   ├── aave3.json
+│   ├── cTokenABI.json
+│   ├── compound.json
+│   ├── compoundOracleABI.json
+│   ├── erc20.json
+│   ├── lending_pool.json
+│   ├── pool_v3.json
+│   ├── priceOracle.json
+│   ├── uniswap.json
+│   └── uniswapV2.json
+├── AMM
+│   ├── AMM.md
+│   └── 获取报价.pdf
+├── Compound
+│   ├── Compound V2 TVL计算.pdf
+│   ├── compound.js
+│   ├── compound_concurrency.js
+│   ├── getAllMarkets.js
+│   └── getExchangeRate.js
+├── README.md
+├── ReverseDate
+│   ├── Decimal
+│   │   ├── AAVE 解析 aToken 的精度（适用于 V2 V3）.pdf
+│   │   └── AAVE.js
+│   └── getReverseData
+│       └── getReverseData.js
+├── TVL 使用文档.pdf
+├── getTokensPrices
+│   ├── getAllTokensPricesConcurrency.js
+│   ├── getAllTokensPricesWithStore.js
+│   ├── getAllTokensPricesWithoutStore.js
+├── images
+├── token_exchange
+│   └── exchange.js
+├── uniswap
+│   ├── uniswap_v1
+│   │   └── v1.md
+│   └── uniswap_v2
+│       ├── AMM.md
+│       └── 获取报价.pdf
+├── web3JS_FrameWork_Study
+│   ├── 1_how_to_use_webjs
+│   │   ├── web3_connect_methods.js
+│   │   ├── web3_first_use.js
+│   │   └── webjs_connect.md
+│   ├── 2_how_to_call_smartcontract
+│   │   └── call_smartcontract.js
+│   ├── 3_web3_framework_api
+│   │   ├── web3
+│   │   ├── web3.eth
+│   │   └── web3.eth.Contract
+│   ├── 4_web3_subscribe
+│   │   ├── subscribe.md
+│   │   ├── subscribe_pendingTx.js
+│   │   ├── subscribe_transfer.js
+│   │   ├── subsribe_newBlockHeader.js
+│   │   └── 实时订阅指定代币合约的日志或事件.pdf
+│   ├── 5_web3_transaction_parse
+│   │   ├── async.js
+│   │   ├── transaction_parse.md
+│   │   ├── transaction_receipt.js
+│   │   └── 解析 Transfer 事件信息.pdf
+│   └── 6_web3_event
+│       ├── All_Event.js
+│       ├── Event_Fliter_Parse.js
+│       └── 解析指定合约过去的日志信息.pdf
+└── 报价公式推导.pdf
+
 # 获取指定协议的 TVL （Total Value Locked）
 TVL（总锁仓量） 可以很好的反映一个协议支持代币的活跃程度，因此获取一个特定协议的总锁仓量对于一个钱包应用来说是至关重要的；
 
@@ -78,10 +163,10 @@ uint256 internal constant DEBT_CEILING_MASK =              0xF0000000000FFFFFFFF
 
 ## AAVE3
 - 优化前
-<video src="images/iShot_2023-09-25_01.29.26.mp4" controls title="Title"></video>
+![]("images/iShot_2023-09-25_01.29.26.mp4")
 
 - 优化后
-<video src="images/iShot_2023-09-25_01.31.12.mp4" controls title="Title"></video>
+![]("images/iShot_2023-09-25_01.31.12.mp4")
 
 
 ## Compound V2
