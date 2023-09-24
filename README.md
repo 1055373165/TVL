@@ -187,15 +187,19 @@ uint256 internal constant DEBT_CEILING_MASK =              0xF0000000000FFFFFFFF
 # 基础构建块
 ## 解析交易收据
 ![](images/2023-09-24-20-59-32.png)
+
 代码位置：`web3JS_FrameWork_Study/5_web3_transaction_parse/transaction_receipt.js`
 
 ## 获取所有代币价格（相对于以太币）
 ![](images/2023-09-24-21-27-54.png)
+
 代码位置（非缓存）：`getTokensPrices/getAllTokensPricesWithoutStore.js`
+
 代码位置（缓存）：`getTokensPrices/getAllTokensPricesWithStore.js`
 
 ## 获取所有代币价格（并发版本）
 https://github.com/1055373165/TVL/assets/33158355/5af76196-9220-43c6-aaae-3f2096ac584f
+
 代码位置（并发）：`getTokensPrices/getAllTokensPricesConcurrency.js`
 
 ## 代币兑换（⭐️⭐️⭐️⭐️⭐️）
@@ -219,12 +223,14 @@ DAI 为存入代币，USDT 为撤出代币，所以调用形式：
 ```jsx
 getAmountsIn("997651", ['DAI_ADDRESS','USDT_ADDRESS'])
 ```
+
 代码位置：`token_exchange/exchange.js`
 
 ## 订阅监听特定事件
 ![](images/2023-09-24-21-41-33.png)
 ![](images/2023-09-24-21-45-29.png)
 ![](images/2023-09-24-21-44-54.png)
+
 代码位置：`web3JS_FrameWork_Study/4_web3_subscribe`
 
 ## 监听所有事件并进行过滤
@@ -232,6 +238,7 @@ getAmountsIn("997651", ['DAI_ADDRESS','USDT_ADDRESS'])
 ![](images/2023-09-24-22-07-20.png)
 ![](images/2023-09-24-22-05-29.png)
 如果想要监听其他时间，只需要修改事件方法签名重新计算一个签名值即可；
+
 代码位置：`web3JS_FrameWork_Study/6_web3_event/All_Event.js`
 
 
@@ -247,6 +254,7 @@ getAmountsIn("997651", ['DAI_ADDRESS','USDT_ADDRESS'])
 - value
 
 ![](images/2023-09-24-21-57-41.png)
+
 代码位置：`web3JS_FrameWork_Study/6_web3_event/Event_Fliter_Parse.js`
 
 ## 对历史事件进行解析
