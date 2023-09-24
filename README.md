@@ -1,88 +1,33 @@
 # 目录结构
 ```
 .
-├── AAVE
-│   ├── AAVE 解析 aToken 的精度（适用于 V2 V3）.pdf
-│   ├── AAVE2
-│   │   ├── AAVE V2 TVL 计算.pdf
-│   │   ├── AAVE2_TVL.js
-│   │   ├── AAVE2_TVL_Concurrency.js
-│   │   ├── getDecimal.js
-│   │   └── getOneEthPrice.js
+├── AAVE                                      // AAVE 两个版本 TVL 计算
+│   ├── AAVE2                                 // 额外包含精度计算和币币兑换
 │   └── AAVE3
-│       ├── AAVE3_TVL.js
-│       └── AAVE3_TVL_Concurrency.js
-├── ABI
-│   ├── AAVE.json
-│   ├── MKR.json
-│   ├── aave2.json
-│   ├── aave3.json
-│   ├── cTokenABI.json
-│   ├── compound.json
-│   ├── compoundOracleABI.json
-│   ├── erc20.json
-│   ├── lending_pool.json
-│   ├── pool_v3.json
-│   ├── priceOracle.json
-│   ├── uniswap.json
-│   └── uniswapV2.json
-├── AMM
-│   ├── AMM.md
-│   └── 获取报价.pdf
-├── Compound
-│   ├── Compound V2 TVL计算.pdf
-│   ├── compound.js
-│   ├── compound_concurrency.js
-│   ├── getAllMarkets.js
-│   └── getExchangeRate.js
-├── README.md
-├── ReverseDate
-│   ├── Decimal
-│   │   ├── AAVE 解析 aToken 的精度（适用于 V2 V3）.pdf
-│   │   └── AAVE.js
-│   └── getReverseData
-│       └── getReverseData.js
-├── TVL 使用文档.pdf
-├── getTokensPrices
-│   ├── getAllTokensPricesConcurrency.js
-│   ├── getAllTokensPricesWithStore.js
-│   ├── getAllTokensPricesWithoutStore.js
-├── images
-├── token_exchange
-│   └── exchange.js
-├── uniswap
+├── ABI                                       // 整个 TVL 项目中所有用到合约的 ABI
+├── AMM                                       // 自动做市商协议
+├── Compound                                  // CompoundV2 协议 TVL 计算（包括并发版本）
+├── ReverseDate                               // 交易收据中的预留数据解析
+│   ├── Decimal        
+│   └── getReverseData 
+├── getTokensPrices                           // 获取协议所有支持代币的价格（相对于 U 或者 Ether）
+├── images                                    
+├── token_exchange                            // 基于预言机合约的币币交换
+├── uniswap                                   // Uniswap 协议
 │   ├── uniswap_v1
-│   │   └── v1.md
 │   └── uniswap_v2
-│       ├── AMM.md
-│       └── 获取报价.pdf
-├── web3JS_FrameWork_Study
-│   ├── 1_how_to_use_webjs
-│   │   ├── web3_connect_methods.js
-│   │   ├── web3_first_use.js
-│   │   └── webjs_connect.md
-│   ├── 2_how_to_call_smartcontract
-│   │   └── call_smartcontract.js
-│   ├── 3_web3_framework_api
-│   │   ├── web3
-│   │   ├── web3.eth
-│   │   └── web3.eth.Contract
-│   ├── 4_web3_subscribe
-│   │   ├── subscribe.md
-│   │   ├── subscribe_pendingTx.js
-│   │   ├── subscribe_transfer.js
-│   │   ├── subsribe_newBlockHeader.js
-│   │   └── 实时订阅指定代币合约的日志或事件.pdf
-│   ├── 5_web3_transaction_parse
-│   │   ├── async.js
-│   │   ├── transaction_parse.md
-│   │   ├── transaction_receipt.js
-│   │   └── 解析 Transfer 事件信息.pdf
-│   └── 6_web3_event
-│       ├── All_Event.js
-│       ├── Event_Fliter_Parse.js
-│       └── 解析指定合约过去的日志信息.pdf
-└── 报价公式推导.pdf
+├── web3JS_FrameWork_Study                    // Web3 框架
+│   ├── 1_how_to_use_webjs                    // 使用 web3.js 框架 demo
+│   ├── 2_how_to_call_smartcontract           // 使用 web3.js 框架调用智能合约
+│   ├── 3_web3_framework_api                  // 掌握 web3.js 框架的常用 api
+│   │   ├── web3                              // web3 库的主类
+│   │   ├── web3.eth                          // web3.eth 用来与以太坊区块链进行交互
+│   │   └── web3.eth.Contract                 // web3.eth.Contract 可以轻松的与智能合约交互
+│   ├── 4_web3_subscribe                      // 订阅指定类型的日志（区块头、待处理交易等）
+│   ├── 5_web3_transaction_parse              // 交易收据解析从而拿到关键数据
+│   └── 6_web3_event                          // 事件监听过滤和解析
+└── 文档汇总                                   // 每个部分的详细解析
+60M used in 29 directories, 111 files
 ```
 
 # 获取指定协议的 TVL （Total Value Locked）
