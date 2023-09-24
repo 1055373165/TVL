@@ -232,8 +232,14 @@ getAmountsIn("997651", ['DAI_ADDRESS','USDT_ADDRESS'])
 代码位置：`token_exchange/exchange.js`
 
 ## 订阅监听特定事件
+
+### 订阅 Transfer 事件并解析
 ![](images/2023-09-24-21-41-33.png)
+
+### 监听新的区块头事件
 ![](images/2023-09-24-21-45-29.png)
+
+### 订阅所有待处理的交易事件（获取它们的 hash 值）
 ![](images/2023-09-24-21-44-54.png)
 
 代码位置：`web3JS_FrameWork_Study/4_web3_subscribe`
