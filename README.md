@@ -165,16 +165,14 @@ uint256 internal constant DEBT_CEILING_MASK =              0xF0000000000FFFFFFFF
 
 ## AAVE3
 - 优化前
+https://github.com/1055373165/TVL/assets/33158355/36b0ffc3-e209-4306-89c9-742ce964e48a
 
-```HTML
-<video width:60% height:auto controls>
-    <source src="images/iShot_2023-09-25_01.29.26.mp4" type="video/mp4">
-</video>
-```
+
+
 
 - 优化后
-![](images/iShot_2023-09-25_01.31.12.mp4)
-<video src="images/iShot_2023-09-25_01.31.12.mp4" width="800px" height="600px" controls="controls"></video>
+https://github.com/1055373165/TVL/assets/33158355/ee2eab7e-2f9b-4fc3-8c6b-39fd45d74030
+
 
 ## Compound V2
 - 优化前查询时间
@@ -195,7 +193,7 @@ uint256 internal constant DEBT_CEILING_MASK =              0xF0000000000FFFFFFFF
 代码位置（缓存）：`getTokensPrices/getAllTokensPricesWithStore.js`
 
 ## 获取所有代币价格（并发版本）
-![](images/iShot_2023-09-24_21.33.15.mp4)
+https://github.com/1055373165/TVL/assets/33158355/5af76196-9220-43c6-aaae-3f2096ac584f
 代码位置（并发）：`getTokensPrices/getAllTokensPricesConcurrency.js`
 
 ## 代币兑换（⭐️⭐️⭐️⭐️⭐️）
